@@ -1,0 +1,3 @@
+h1,h2,.answer p,.footer p{font-family:Verdana, Geneva, sans-serif;}
+h1{font-size:24px; color:#FFC;  border-bottom:1px dashed #FFFFCC; padding:10px; text-align:center;}
+h2{font-size:20px; color:#fff; cursor:pointer;}

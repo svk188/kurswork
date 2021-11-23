@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<!-- служебная часть -->
+
+<head>
+    <!-- заголовок страницы -->
+    <title></title>
+    <!-- настраиваем служебную информацию для браузеров -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- загружаем Бутстрап -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+        body{
+            background-color: rgba(0, 0, 0);
+            background-image: url("https://rus35.ru/wp-content/uploads/2021/04/strh-750x410.png");
+
+            background-size: 100%;
+
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        h1 {color: #000000;
+            font-size: 50px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        h2 {color: #ffffff;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        h3 {color: #54b52b;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        li{
+            color:#ffffff;
+        }
+        p {
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<nav class="top-menu">
+    <ul class="menu-main">
+        <li><a href="onas.html" class="current">О нас</a></li>
+        <li><a href="index.php">Заказать ОСАГО для авто</a></li>
+        <li><a href="index2.php">Заказать спортивную страховку</a></li>
+        <li><a href="index3.php">Заказать страховку для Путшествий</a></li>
+        <li><a href="admin/admin.php">Авторизация</a></li>
+    </ul>
+</nav>
+<style>@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+.top-menu {
+    position: relative;
+    background: #fff;
+    box-shadow: inset 0 0 10px #ccc;
+}
+.top-menu:before,
+.top-menu:after {
+    content: "";
+    display: block;
+    height: 1px;
+    border-top: 3px solid #575350;
+    border-bottom: 1px solid #575350;
+    margin-bottom: 2px;
+}
+.top-menu:after {
+    border-bottom: 3px solid #575350;
+    border-top: 1px solid #575350;
+    box-shadow: 0 2px 7px #ccc;
+    margin-top: 2px;
+}
+.menu-main {
+    list-style: none;
+    padding: 0 30px;
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+}
+.menu-main:before,
+.menu-main:after {
+    content: "\25C8";
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu-main:before {left: 15px;}
+.menu-main:after {right: 15px;}
+.menu-main li {
+    display: inline-block;
+    padding: 5px 0;
+}
+.menu-main a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 5px;
+    padding: 6px 15px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: #777777;
+    border-bottom: 1px solid transparent;
+    transition: .3s linear;
+}
+.menu-main .current, .menu-main a:hover {
+    border-radius: 3px;
+    background: #f3ece1;
+    color: #313131;
+    text-shadow: 0 1px 0 #fff;
+    border-color: #c6c6c6;
+}
+@media (max-width: 500px) {
+    .menu-main li {display: block;}
+}
+</style>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Страховая компания ГОРСТРАХ</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <p>Мы молодая быстрорастущая компания по страхованию. Компания основа в 2017 году. Трудимся, чтобы вы чувствовали себя под надежной защитой</p>
+            <p>Наш сайт предоставляет услуги по следующим страховым случаям: Страховка ОСАГО, Спортивная страховка, Страховка для путешествий.
+            Для офомрления страховки вам необходимо выбрать нужную страховку в меню, перед вами откроются поля ввода, вам необходимо выбрать вид страховки в главном меню, запомнить все необходимые поля калькулятор подсчитает стоимость страховки.
+            Если цена вас устраивает, вы можете нажать кнопку "Оформить". Для этого необходимо будет ввести ваше ФИО и почту для связи.</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <img src="https://strahovki.kh.ua/wp-content/uploads/2020/10/strahovki-logo.png" id="lg">
+        </div>
+        <hr align="center" width="1000" size="2" color="#2e3a44" />
+        <div class="col-24 col-sm-24 col-md-12 col-lg-12 col-xl-12">
+            <h1>FAQ - Часто Задаваемые Вопросы</h1>
+            <h3>Кто обязан приобретать полис обязательного страхования автогражданской ответственности?
+            </h3>
+            <p>Для физических лиц – собственник транспортного средства или лицо, использующее транспортное средство на законных основаниях и желающее застраховать свою гражданскую ответственность. Для юридических лиц – собственник транспортного средства или организация, владеющая им на праве хозяйственного ведения или праве оперативного управления либо на других законных основаниях (на праве аренды, в силу распоряжения соответствующего органа о передаче ему транспортного средства и т.п.).</p>
+            <h3>Какие документы необходимы для заключения договора ОСАГО?</h3>
+            <p>Для заключения договора необходимы следующие документы:
+            <ul>
+            <li><>заявление о заключении договора ОСАГО по установленной форме;</li>
+            <li>документ, удостоверяющий личность (для физических лиц);</li>
+            <li>свидетельство о государственной регистрации (для юридических лиц);</li>
+            <li>ПТС, свидетельство о регистрации транспортного средства, технический паспорт, технический талон или аналогичный документ;</li>
+            <li>водительское удостоверение или копия водительского удостоверения лица, допущенного к управлению ТС:</li>
+            <li>диагностическая карта, содержащая сведения о соответствии транспортного средства обязательным требованиям безопасности транспортных средств.</li></ul></p>
+        <h3>
+            Что делать при утрате полиса ОСАГО?</h3>
+            <p>При утрате страхового полиса страхователь имеет право на получение дубликата бесплатно!</p>
+        </div>
+</div>
+
+</div>
+
+<div id="footer">
+    <div class="main-content">
+        <div class="left box">
+            <h2>Социальные сети</h2>
+            <div class="content">
+                <p>Вы можете найти нас в социальных сетях</p>
+                <div class="social">
+                    <a href="https://www.facebook.com"><span class="fab fa-facebook-f"></span></a>
+                    <a href="https://www.twitter.com/"><span class="fab fa-twitter"></span></a>
+                    <a href="https://www.instagram.com/vovan_mx188/"><span class="fab fa-instagram"></span></a>
+                    <a href="https://www.youtube.com/"><span class="fab fa-youtube"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="center box">
+            <h2>Контакты</h2>
+            <div class="content">
+                <p>Свяжитесь с нами</p>
+                <div class="place">
+                    <a href="filials.html#cont"><span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Москва</span></a>
+                </div>
+                <div class="phone">
+                    <a href="tel: 89269269417"><span class="fas fa-phone-alt"></span>
+                        <span class="text">8-926-926-94-17</span></a>
+                </div>
+                <div class="email">
+                    <a href="mailto: sychev_188@mail.ru"><span class="fas fa-envelope"></span>
+                        <span class="text">sychev_188@mail.ru</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="right box">
+            <h2>Отправь сообщение<h2>
+                <div class="content">
+                    <form id="form_input">
+                        <label for="name">Имя <span>*</span></label><br>
+                        <input type="text" placeholder="Введите имя" name="name" id="name"><br>
+                        <label for="email">Ваша почта <span>*</span></label><br>
+                        <input type="email" placeholder="Введите email" name="email" id="email"><br>
+                        <label for="message">Сообщение <span>*</span></label><br>
+                        <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+                        <div id="mess_send" class="btn">Отправить</div>
+                    </form>
+                </div>
+        </div>
+    </div>
+</div>
+
+<style>/* footer */
+#footer {
+    background-color: #92684f;
+    border-top: 2px dashed silver;
+    width: 100%;
+    float: left;
+}
+.main-content {
+    display: flex;
+}
+.main-content .box{
+    flex-basis:50%;
+    padding: 10px 20px;
+}
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.box .content:before{
+    position: absolute;
+    content: '';
+    top:-10px;
+    height: 2px;
+    width: 100%;
+    background: #f12020;;
+}
+
+.left .content p {
+    text-align: justify;
+}
+.left .content .social {
+    margin: 20px 0 0 0;
+}
+.left .content .social a {
+    padding: 0 2px;
+}
+.left .content .social a span {
+    height:40px;
+    width: 40px;
+    color: black;
+    background: #c9a2a2;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.left .content .social a span:hover{
+    background:#c15443;
+}
+.center .content .fas {
+    font-size: 1.4375rem;
+    background: #c9a2a2;
+    color:black;
+    height: 45px;
+    line-height: 45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 1s;
+    cursor: pointer;
+}
+.center .content a {
+    color:black;
+    text-decoration: none;
+}
+.center .content a:hover {
+    color:#c15443;
+    transition: 1s;
+}
+.center .content .fas:hover {
+    background: #c15443;
+}
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+
+}
+.center .content .place{
+    margin:10px 0
+}
+.center .content .phone{
+    margin:10px 0
+}
+.right .content .form{
+    margin: 10px 0 0 0;
+}
+@media (max-width:800px)
+{
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin:5px 0;
+    }
+}
+.btn {
+    float:left;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color:#c9a2a2;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: white;
+    font-family: "Roboto",serif;
+}
+.btn:hover {
+    background-color: #c15443;
+}
+#contacts {
+    width: 100%;
+}
+h1,h2,h3,h4,h5 {
+    font-family: "Roboto Slab", serif;
+    font-weight: lighter;
+}
+#contacts h5 {
+    font-size:1rem;
+    color: #4f4f4f;
+}
+#form_input{
+    font-size:0.7em;
+}
+
+#form_input label {
+    color: #000000;;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "Roboto Slab", serif;
+}
+#form_input label  > span {
+    color: #e87e7e;
+}
+#form_input input, #form_input textarea {
+    margin-bottom:10px;
+    width: 70%;
+    padding:10px 2%;
+    border-radius: 7px;
+    border: 2px solid silver;
+    font-size:0.9em;
+    color: #4a4a4a;
+}
+#form_input input:focus, #form_input textarea:focus {
+    border-color: #2e3a44;
+}
+</style>
+</body>
+<!-- конец всей страницы -->
+
+</html>

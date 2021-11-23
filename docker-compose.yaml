@@ -1,0 +1,48 @@
+version: '3.7'
+services:
+  apache:
+    build: .
+    container_name: apache2
+    depends_on:
+      - mysql
+    volumes:
+      - ./web:/var/www/html/
+      - ./apache2/apache2.conf:/etc/apache2/apache2.conf
+    ports:
+      - "8080:80"
+    networks:
+      - nginx_net
+
+  mysql:
+    image: mysql:5.7
+    restart: always
+    container_name: mysql2
+    command: --innodb_use_native_aio=0
+    environment:
+      MYSQL_ROOT_PASSWORD: qwerty
+    volumes:
+      - ./init_db:/docker-entrypoint-initdb.d
+      - dbdata:/var/lib/mysql
+    networks:
+      - nginx_net
+    ports:
+      - "3306:3306"
+
+  nginx-reverse-proxy:
+    container_name: nginx2
+    image: nginx:latest
+    volumes:
+      - ./web:/usr/share/nginx/html/
+      - ./nginx/data/nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - nginx_net
+networks:
+  nginx_net:
+    name: nginx_net
+    external: false
+
+volumes:
+  dbdata:
